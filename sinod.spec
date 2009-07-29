@@ -1,14 +1,13 @@
 
-%define		rel 20090705
 Summary:	Simple Notification Daemon
 Summary(pl.UTF-8):	Prosty serwer powiadomień
 Name:		sinod
-Version:	0
-Release:	0.%{rel}.1
+Version:	0.1
+Release:	0.1
 License:	GPL v3
 Group:		Applications/System
-Source0:	http://xatka.net/~z/sinod/%{name}-%{rel}.tar.bz2
-# Source0-md5:	53796e8a6c3e7b7f2222e8f59ae615ab
+Source0:	http://xatka.net/~z/sinod/%{name}-%{version}.tar.bz2
+# Source0-md5:	c0b9bd8878b7557dfeaa2a4264b1280c
 URL:		http://xatka.net/~z/sinod
 BuildRequires:	rpm-pythonprov
 Requires:	dbus >= 0.91
@@ -43,7 +42,7 @@ tylko o powiadomieniach z "zascreenowanej" sesji irc na twoim koncie
 shellowym tysiące kilometrów stąd).
 
 %prep
-%setup -q -n %{name}-%{rel}
+%setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
